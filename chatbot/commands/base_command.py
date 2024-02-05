@@ -1,3 +1,8 @@
+# chatbot/commands/base_command.py
+
 class Command:
     def execute(self):
-        pass
+        raise NotImplementedError("You must implement the execute method.")
+
+    def undo(self):
+        pass  # Optional implementation in subclasses
